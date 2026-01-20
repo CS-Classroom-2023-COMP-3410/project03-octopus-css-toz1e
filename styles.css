@@ -1,9 +1,21 @@
+/* To Approach this project I decided to work from the top down breaking it down into the 
+sections of the website
+So first the header, then the different headings and paragraphs/lists in the main content section
+Then the quiz section, the species table, and finally the footer section
+
+It was a bit of a struggle to figure out some of the spacing for the text and formatting due to the screenshot 
+not being the website in a full page so I ended up having to make some assumptions and often used the px instead of relative width
+which screws up some of the elements when you resize the page into full screen or a very small screen.
+*/
+
+/* First Section, the Header + the Fonts + the paragraphs sections, went fully from TOP down to copy the page format */
 #header {
     background-color: #0b6fdc;
     padding-bottom: 3px; /* Add some padding */  
     width: 100%; /* Adjust height as needed */
     padding-top: 5px;
     margin-top: -22px;
+    margin-left: -8px;
 
 }
 #header h1 {
@@ -16,9 +28,122 @@
     color: white;
     font-style: italic;
     margin-top: -20px;
+    font-family: Arial;
+    
 }
-/* STILL NEED TO ADD SOME MORE BLUE BACKGROUND BELOW THE WELCOME TEXT */
+li {
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 22px;
+}
 
+#main-content h2 {
+    text-transform: uppercase;
+    font-family: Arial;
+}
+
+#main-content h3 {
+    text-transform: uppercase;
+    font-family: Arial;
+    font-size: 18px;
+    margin-top: -5px;
+}
+#main-content h4 {
+    font-family: Arial;
+    font-size: 16px;
+    margin-bottom: -2px;
+}
+#main-content h5 {
+    font-family: Arial;
+    font-size: 13px;
+    margin-bottom: -1px;
+}
+#main-content h6 {
+    font-family: Arial;
+    font-size: 13px;
+    margin-bottom: -1px;
+}
+#main-content p {
+    font-family: Arial;
+    font-size: 15px;
+}
+
+/* Quiz Section Styling */
+#quiz-section {
+    background-color: #e2f6ff;
+    padding: 20px;
+    justify-content: space-between;
+    margin-top: 30px;
+    border: 1px solid lightgray;
+    font-family: arial;
+    font-size: 13px;
+}
+#quiz-section h2 {
+    font-family: Arial;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+#quiz-section p {
+    font-family: Arial;
+    font-size: 15px;
+    margin: 8px 0 4px;
+}
+
+/* This allows to get both inputs at once found how to do this online */
+#quiz-section input[type="text"]{ 
+    width: 25%;
+    margin-bottom: 5px;
+    font-size: 9px;
+}
+
+#quiz-image {
+    float: right;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-right: 30px;
+    width: 75px;
+    border: 2px solid #6a00ff;
+}
+
+/* Adjustments for the Common Octopus Species, struggled at first to transform the h2 to Capitalize
+only the first letter of each word but found it was a easy text-transform */
+#species-table h2 {
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+#species-table th {
+    background-color: gray;
+    color: white;
+    border: 1px solid black;
+    font-size: 14px;
+    text-align: left;
+    padding: 5px;
+    font-family: arial;
+}
+#species-table td {
+    border: 1px solid black;
+    padding: 5px;
+    font-family: arial;
+    font-size: 15px;
+}
+
+#footer {
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    margin-top: 30px;
+    font-family: Arial;
+    padding: 5px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+/* Footer Paragraph including the copyright text and the background colors for that section */
+#footer p {
+    font-size: 12px;
+}
 h2 {
     font-family: Arial;
     text-transform: uppercase;
@@ -27,4 +152,8 @@ h2 {
     margin-top: 25px;
     margin-bottom: 25px;
 
+}
+p {
+    font-family: Arial;
+    font-size: 15px;
 }
